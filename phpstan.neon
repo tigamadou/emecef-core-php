@@ -1,0 +1,9 @@
+includes:
+    - phpstan.neon.dist
+parameters:
+    level: max
+    paths:
+        - src
+    excludePaths:
+        - tests
+    reportUnmatchedIgnoredErrors: true

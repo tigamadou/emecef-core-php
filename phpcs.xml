@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- Warnings = errors: CI must fail on any phpcs warning (exit code 2). Do not use ignore-warnings or weaken rules. -->
+<ruleset name="emecef-core">
+    <description>PHP_CodeSniffer ruleset for emecef-core. phpcbf is mandatory. Maximum strictness; warnings must fail CI.</description>
+    <file>src</file>
+    <file>tests</file>
+    <rule ref="PSR12"/>
+    <arg name="extensions" value="php"/>
+</ruleset>

@@ -1,0 +1,5 @@
+# Maximum strictness. Do not add baseline or ignoreErrors to silence issues; fix code instead.
+parameters:
+    level: max
+    paths:
+        - src
