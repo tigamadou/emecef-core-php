@@ -25,7 +25,7 @@ final class ClientConfirmTest extends ClientApiTestCase
             ->method('request')
             ->with(
                 'PUT',
-                self::BASE_URL . '/' . $uid . '/confirmer',
+                self::BASE_URL . '/' . $uid . '/confirm',
                 $this->defaultHeaders(),
                 null
             )

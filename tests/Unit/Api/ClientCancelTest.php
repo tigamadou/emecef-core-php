@@ -24,7 +24,7 @@ final class ClientCancelTest extends ClientApiTestCase
             ->method('request')
             ->with(
                 'PUT',
-                self::BASE_URL . '/' . $uid . '/annuler',
+                self::BASE_URL . '/' . $uid . '/cancel',
                 $this->defaultHeaders(),
                 null
             )

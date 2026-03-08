@@ -123,7 +123,7 @@ final class Client
     }
 
     /**
-     * Confirm a pending invoice (PUT {baseUrl}/{uid}/confirmer). Returns decoded response (SecurityElementsDto shape).
+     * Confirm a pending invoice (PUT {baseUrl}/{uid}/confirm). Returns decoded response (SecurityElementsDto shape).
      *
      * @return array<string, mixed>
      *
@@ -132,7 +132,7 @@ final class Client
      */
     public function confirm(string $uid): array
     {
-        $response = $this->send('PUT', $this->baseUrl . '/' . $uid . '/confirmer', null);
+        $response = $this->send('PUT', $this->baseUrl . '/' . $uid . '/confirm', null);
         return $this->decodeJson($response->getBody());
     }
 
@@ -149,7 +149,7 @@ final class Client
     }
 
     /**
-     * Cancel a pending invoice (PUT {baseUrl}/{uid}/annuler). Returns decoded response (SecurityElementsDto shape).
+     * Cancel a pending invoice (PUT {baseUrl}/{uid}/cancel). Returns decoded response (SecurityElementsDto shape).
      *
      * @return array<string, mixed>
      *
@@ -158,7 +158,7 @@ final class Client
      */
     public function cancel(string $uid): array
     {
-        $response = $this->send('PUT', $this->baseUrl . '/' . $uid . '/annuler', null);
+        $response = $this->send('PUT', $this->baseUrl . '/' . $uid . '/cancel', null);
         return $this->decodeJson($response->getBody());
     }
 
